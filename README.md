@@ -17,6 +17,7 @@ The system uses **transfer learning with VGG16** as the feature extractor and **
 
 ## Architecture -
 ### Model Overview
+```mermaid
 graph TD
     A[Input 120x120x3] --> B[VGG16]
     B --> C[Pooling]
@@ -24,3 +25,4 @@ graph TD
     C --> E[Regression Branch]
     D --> F[Face/No Face]
     E --> G[Bounding Box]
+```
