@@ -17,18 +17,10 @@ The system uses **transfer learning with VGG16** as the feature extractor and **
 
 ## Architecture -
 ### Model Overview
-flowchart LR
-    A[Input<br/>120x120x3] --> B[VGG16]
+graph TD
+    A[Input 120x120x3] --> B[VGG16]
     B --> C[Pooling]
-    C --> D[Classification]
-    C --> E[Regression]
+    C --> D[Classification Branch]
+    C --> E[Regression Branch]
     D --> F[Face/No Face]
     E --> G[Bounding Box]
-    
-    style A fill:#e1d5ff
-    style B fill:#e1d5ff
-    style C fill:#e1d5ff
-    style D fill:#e1d5ff
-    style E fill:#e1d5ff
-    style F fill:#d5e1ff
-    style G fill:#d5e1ff
