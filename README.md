@@ -6,7 +6,7 @@ This project implements a dual-output neural network that simultaneously:
 Classifies whether a face is present in the frame
 Localizes the face by predicting bounding box coordinates
 
-The system uses transfer learning with VGG16 as the feature extractor and custom dense layers for classification and regression tasks.
+The system uses **transfer learning with VGG16** as the feature extractor and custom dense layers for classification and regression tasks.
 Features
 
 Real-time face detection via webcam feed
