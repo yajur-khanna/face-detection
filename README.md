@@ -37,6 +37,11 @@ graph TD
 | dense_2 (Dense) | (None, 2048) | 1,050,624 | ['global_max_pooling2d[0][0]'] |
 | dense_1 (Dense) | (None, 1) | 2,049 | ['dense[0][0]'] |
 | dense_3 (Dense) | (None, 4) | 8,196 | ['dense_2[0][0]'] |
+**Model Parameters:**
+- **Total parameters**: 16,826,181 (64.19 MB)
+- **Trainable parameters**: 16,826,181 (64.19 MB)
+- **Non-trainable parameters**: 0 (0.00 Byte)
+
 
 ## Dataset Preparation
 ### Data Collection
