@@ -45,3 +45,10 @@ Organize into train/test/val splits
 - 60x augmentation per image
 
 ### Final dataset: 3,840 training images, 720 test images, 660 validation images
+
+## Model Training
+### Loss Functions -
+
+- Classification Loss: Binary cross-entropy
+- Localization Loss: Custom loss combining coordinate distance and bounding box size difference
+### Total Loss = Localization Loss + 0.5 × Classification Loss
