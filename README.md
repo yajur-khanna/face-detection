@@ -44,7 +44,7 @@ Organize into train/test/val splits
 - RGB channel shifting
 - 60x augmentation per image
 
-### Final dataset: 3,840 training images, 720 test images, 660 validation images
+#### Final dataset: 3,840 training images, 720 test images, 660 validation images
 
 ## Model Training
 ### Loss Functions -
@@ -52,3 +52,27 @@ Organize into train/test/val splits
 - Classification Loss: Binary cross-entropy
 - Localization Loss: Custom loss combining coordinate distance and bounding box size difference
 ### Total Loss = Localization Loss + 0.5 × Classification Loss
+
+## Training Configuration -
+
+- Optimizer: Adam with learning rate decay
+- Initial learning rate: 0.0001
+- Epochs: 30
+- Batch size: 8
+- Input size: 120×120×3
+
+## Performance
+### The model achieves low validation losses -
+
+- Classification Loss: <0.0001
+- Regression Loss: ~0.005
+#### Total Loss: ~0.005
+
+## Key Technologies
+
+- TensorFlow/Keras: Deep learning framework
+- OpenCV: Image processing and webcam interface
+- Albumentations: Advanced image augmentation
+- VGG16: Transfer learning backbone
+- NumPy: Numerical computations
+- Matplotlib: Visualization
