@@ -26,3 +26,22 @@ graph TD
     D --> F[Face/No Face]
     E --> G[Bounding Box Coordinates]
 ```
+
+## Dataset Preparation
+### Data Collection
+
+Capture images using webcam (30 images)
+Annotate images using LabelMe for bounding boxes
+Organize into train/test/val splits
+
+### Data Augmentation
+#### Applied transformations using Albumentations:
+
+Random cropping (450x450)
+Horizontal and vertical flips
+Random brightness/contrast adjustment
+Random gamma correction
+RGB channel shifting
+60x augmentation per image
+
+### Final dataset: 3,840 training images, 720 test images, 660 validation images
