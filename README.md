@@ -26,6 +26,17 @@ graph TD
     D --> F[Face/No Face]
     E --> G[Bounding Box Coordinates]
 ```
+### Model Architecture Summary
+
+| Layer (type) | Output Shape | Param # | Connected to |
+|-------------|--------------|---------|--------------|
+| input_1 (InputLayer) | (None, 120, 120, 3) | 0 | [] |
+| vgg16 (Functional) | (None, None, None, 512) | 14,714,688 | ['input_1[0][0]'] |
+| global_max_pooling2d (GlobalMaxPooling2D) | (None, 512) | 0 | ['vgg16[0][0]'] |
+| dense (Dense) | (None, 2048) | 1,050,624 | ['global_max_pooling2d[0][0]'] |
+| dense_2 (Dense) | (None, 2048) | 1,050,624 | ['global_max_pooling2d[0][0]'] |
+| dense_1 (Dense) | (None, 1) | 2,049 | ['dense[0][0]'] |
+| dense_3 (Dense) | (None, 4) | 8,196 | ['dense_2[0][0]'] |
 
 ## Dataset Preparation
 ### Data Collection
