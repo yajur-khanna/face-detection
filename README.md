@@ -24,5 +24,5 @@ graph TD
     C --> D[Classification Branch]
     C --> E[Regression Branch]
     D --> F[Face/No Face]
-    E --> G[Bounding Box]
+    E --> G[Bounding Box Coordinates]
 ```
