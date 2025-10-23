@@ -86,7 +86,7 @@ Organize into train/test/val splits
 
 ### ![Training and Validation Loss History](./images/loss_summary_graphs.png)
 
-*Figure caption goes here*
+*Training and validation loss curves over 30 epochs. Left: Total loss showing rapid convergence in early epochs. Center: Classification loss approaching near-zero, indicating excellent face detection accuracy. Right: Regression loss demonstrating precise bounding box localization with minimal overfitting.*
 
 ## Key Technologies
 
