@@ -84,6 +84,10 @@ Organize into train/test/val splits
 - Regression Loss: ~0.005
 #### Total Loss: ~0.005
 
+### ![Training and Validation Loss History](./images/Loss_Summary_Graphs.png)
+
+*Figure caption goes here*
+
 ## Key Technologies
 
 - TensorFlow/Keras: Deep learning framework
