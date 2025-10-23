@@ -96,3 +96,5 @@ Organize into train/test/val splits
 - VGG16: Transfer learning backbone
 - NumPy: Numerical computations
 - Matplotlib: Visualization
+
+## Note: I have not uploaded train, test and val dataset folders as I used my own facial images for training the model, so for privacy purposes I've not uploaded those folders
