@@ -84,7 +84,7 @@ Organize into train/test/val splits
 - Regression Loss: ~0.005
 #### Total Loss: ~0.005
 
-### ![Training and Validation Loss History](./images/Loss_Summary_Graphs.png)
+### ![Training and Validation Loss History](./images/loss_summary_graphs.png)
 
 *Figure caption goes here*
 
