@@ -8,12 +8,16 @@ Localizes the face by predicting bounding box coordinates
 
 The system uses **transfer learning with VGG16** as the feature extractor and **custom dense layers for classification and regression tasks.**
 
+---
+
 ## Features -
 - Real-time face detection via webcam feed
 - Custom data augmentation pipeline using Albumentations
 - Dual-task learning with combined classification and localization loss
 - VGG16 backbone for robust feature extraction
 - Live bounding box visualization on detected faces
+
+---
 
 ## Architecture -
 ### Model Overview
@@ -42,6 +46,7 @@ graph TD
 - **Trainable parameters**: 16,826,181 (64.19 MB)
 - **Non-trainable parameters**: 0 (0.00 Byte)
 
+---
 
 ## Dataset Preparation
 ### Data Collection
@@ -62,12 +67,16 @@ Organize into train/test/val splits
 
 #### Final dataset: 3,840 training images, 720 test images, 660 validation images
 
+---
+
 ## Model Training
 ### Loss Functions -
 
 - Classification Loss: Binary cross-entropy
 - Localization Loss: Custom loss combining coordinate distance and bounding box size difference
 ### Total Loss = Localization Loss + 0.5 × Classification Loss
+
+---
 
 ## Training Configuration -
 
@@ -76,6 +85,8 @@ Organize into train/test/val splits
 - Epochs: 30
 - Batch size: 8
 - Input size: 120×120×3
+
+---
 
 ## Performance
 ### The model achieves low validation losses -
@@ -87,6 +98,8 @@ Organize into train/test/val splits
 ### ![Training and Validation Loss History](./images/loss_summary_graphs.png)
 
 *Training and validation loss curves over 30 epochs. Left: Total loss showing rapid convergence in early epochs. Center: Classification loss approaching near-zero, indicating excellent face detection accuracy. Right: Regression loss demonstrating precise bounding box localization with minimal overfitting.*
+
+---
 
 ## Key Technologies
 
